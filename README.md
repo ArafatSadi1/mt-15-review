@@ -1,3 +1,17 @@
+## Project Name : Mt-15-Review
+
+## Project Live Link : https://peaceful-mt-15-review-druid-34d7e3.netlify.app/
+
+# Bullet Point : 
+1. The site created using React Router.
+
+2. Styled using React Taildwind.
+
+3. fetch data using custome hook.
+
+4. used CustomLink for navBar link.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
