@@ -3,7 +3,7 @@ import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
-        <nav className='flex justify-center mt-8 uppercase'>
+        <nav className='flex justify-center mt-8 uppercase font-semibold'>
             <CustomLink className='ml-6 text-lg' to='/'>Home</CustomLink>
             <CustomLink className='ml-6 text-lg' to='/review'>Review</CustomLink>
             <CustomLink className='ml-6 text-lg' to='/dashboard'>Dashboard</CustomLink>

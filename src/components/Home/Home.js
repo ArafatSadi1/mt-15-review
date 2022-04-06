@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useReviews from "../../hooks/useReviews";
+import Review from "../Review/Review";
 
 const Home = () => {
+  const [reviews, setReviews] = useReviews();
+
   return (
     <div>
       <div className="w-full flex items-center">
@@ -26,9 +30,18 @@ const Home = () => {
         </div>
       </div>
       <div className="my-12">
-          <h2 className="text-3xl font-semibold my-4">Custom Review(3)</h2>
-
-          <Link className="bg-blue-900 text-white px-4 py-2 rounded-md mt-8" to='/review'>See All Review</Link>
+        <h2 className="text-3xl font-semibold my-4">Custom Review(3)</h2>
+        <div className="grid grid-cols-3 mb-8">
+          {reviews.slice(0, 3).map((review) => (
+            <Review key={review.id} review={review}></Review>
+          ))}
+        </div>
+        <Link
+          className="bg-blue-900 text-white px-4 py-2 rounded-md"
+          to="/review"
+        >
+          See All Review
+        </Link>
       </div>
     </div>
   );
