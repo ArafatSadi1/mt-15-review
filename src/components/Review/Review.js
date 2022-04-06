@@ -10,7 +10,7 @@ const Review = ({ review }) => {
       <div className="text-left">
         <h3 className="text-lg font-semibold text-center my-4">{name}</h3>
         <p><span className="font-semibold">Comment</span>: {comment.slice(0,150)}....</p>
-        <p className="font-semibold mt-4">Rating: <span>{ratings}</span></p>
+        <p className="font-semibold mt-4">Rating: <span className="text-yellow-600">{ratings}</span></p>
       </div>
     </div>
   );
